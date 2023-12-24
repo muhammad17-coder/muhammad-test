@@ -1,0 +1,44 @@
+.programs{
+
+  &-title{
+    @include flex(center, space-between);
+
+    &__text{
+      color: #000;
+      font-size: 39px;
+      font-weight: 600;
+
+      span{
+        color:  #FF8541;
+        font-size: 39px;
+        font-weight: 600;
+      }
+    }
+
+    &__button{
+      color: #1C1917;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 18px 36px;
+      border-radius: 8px;
+      border: 1px solid #555351;
+      transition: all 0.2s ease-in-out;
+
+      &:hover{
+        color: #fff;
+        border-color: #FF8541;
+        background-color: #FF8541;
+      }
+    }
+  }
+
+  &-content{
+    @include flex();
+    flex: 1 1 auto;
+    &__card{
+      width: 337px;
+      height: 260px;
+
+    }
+  }
+}
